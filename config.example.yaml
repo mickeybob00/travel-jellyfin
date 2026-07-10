@@ -1,0 +1,42 @@
+# Travel Jellyfin Configuration
+# Copy this file to config.yaml and fill in your values
+
+# Mode Controller (port 9090) — ESP32 API
+api:
+  # API key for ESP32 authentication. Change this!
+  # The ESP32 must send this as: Authorization: Bearer <key>
+  # or: X-API-Key: <key>
+  api_key: "YOUR_API_KEY_HERE"
+
+  # Kodi JSON-RPC endpoint (Kodi's built-in API)
+  kodi_rpc_url: "http://localhost:8096/jsonrpc"
+
+  # Jellyfin URL shown on the status display
+  jellyfin_url: "http://10.42.0.1:8096"
+
+# Network
+network:
+  # WiFi hotspot SSID and password
+  hotspot_ssid: "Travel-Jellyfin"
+  hotspot_password: "YOUR_HOTSPOT_PASSWORD"
+  # Hotspot gateway IP (Pi's address on hotspot network)
+  hotspot_ip: "10.42.0.1"
+
+# NAS Media Source (NFS mount, read-only)
+nas:
+  nas_ip: "YOUR_NAS_IP"
+  nfs_export: "/path/to/your/media"
+  mount_point: "/mnt/nas-media"
+
+# Storage
+storage:
+  # Pi NVMe mount point for movies/TV
+  nvme_mount: "/mnt/media"
+  # SD card mount point for additional media
+  sd_mount: "/srv/media"
+
+# Jellyfin
+jellyfin:
+  port: 8096
+  username: "YOUR_JELLYFIN_USER"
+  password: "YOUR_JELLYFIN_PASSWORD"

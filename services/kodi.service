@@ -1,0 +1,20 @@
+[Unit]
+Description=Kodi standalone (Hotel Mode)
+After=systemd-user-sessions.service network-online.target jellyfin.service
+Wants=network-online.target
+Conflicts=car-mode.service
+
+[Service]
+User=<YOUR_USERNAME>
+Group=<YOUR_USERNAME>
+PAMName=login
+Type=simple
+TTYPath=/dev/tty1
+EnvironmentFile=-/etc/default/kodi
+ExecStart=/usr/bin/kodi-standalone --:0
+ExecStop=/usr/bin/killall -9 kodi.bin
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

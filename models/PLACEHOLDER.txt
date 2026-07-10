@@ -1,0 +1,3 @@
+# Placeholder STL files
+# Replace these with your actual 3D model files.
+# See README.md for component dimensions and design goals.

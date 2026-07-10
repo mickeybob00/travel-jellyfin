@@ -1,0 +1,13 @@
+[Unit]
+Description=Travel Jellyfin Media Manager (port 9091)
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /usr/local/bin/media-manager.py
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

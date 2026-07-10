@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<settings><setting id="server_address" value="10.42.0.1" /><setting id="server_port" value="8096" /><setting id="https" value="false" /></settings>

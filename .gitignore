@@ -1,0 +1,25 @@
+# Secrets — never commit these
+config.yaml
+*.secret
+*.key
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build artifacts
+*.o
+*.elf
+*.bin
+*.hex
+.pio/
+build/
+
+# OS
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc

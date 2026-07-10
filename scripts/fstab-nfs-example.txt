@@ -1,0 +1,1 @@
+<NAS_IP>:/path/to/your/media /mnt/nas-media nfs4 ro,_netdev,noatime 0 0
