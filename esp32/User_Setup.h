@@ -1,9 +1,10 @@
 // ============================================================
-// TFT_eSPI User_Setup.h — ESP32-3248S035R (3.5" CYD resistive)
+// TFT_eSPI User_Setup.h — ESP32-035 (3.5" CYD resistive)
 // ST7796 display + XPT2046 touch (shared SPI bus)
+// Portrait: 320 wide x 480 tall
 // ============================================================
 
-#define USER_SETUP_INFO "ESP32-3248S035R"
+#define USER_SETUP_INFO "ESP32-035"
 
 // ---- Display driver ----
 #define ST7796_DRIVER

@@ -1,0 +1,24 @@
+# Build artifacts
+**/build/
+*.bin
+*.elf
+*.map
+*.bootloader.bin
+*.partitions.bin
+*.merged.bin
+
+# Test/utility sketches (not part of main firmware)
+gpio-scanner/
+gpio-scanner2/
+touch-cal/
+touch-cal2/
+touch-cal3/
+touch-cal4/
+wifi-test/
+firmware-build/
+
+# Secrets — keep config.h local, use config.h.example as template
+travel-jellyfin-cyd/config.h
+
+# PlatformIO
+.pio/
