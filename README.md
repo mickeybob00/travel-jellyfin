@@ -23,7 +23,7 @@ to hotel TVs via HDMI and Kodi.
 | SD Card | 512GB (secondary storage) |
 | WiFi | Built-in (hotspot mode) |
 | HDMI | Auto-detected for hotel mode |
-| ESP32-2432S028R | 2.8" touchscreen front panel (~$15) |
+| ESP32-2432S028R | 3.5" touchscreen front panel (~$15) |
 
 ## Architecture
 
